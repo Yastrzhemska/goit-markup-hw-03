@@ -50,7 +50,8 @@ img {
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -59,7 +60,7 @@ img {
 .header {
     display: flex;
     align-items: center;
-    border: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .logo {
@@ -67,8 +68,6 @@ img {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-color-first);
@@ -110,7 +109,8 @@ img {
 
 .header-container {
     display: flex;
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .contact-link {
@@ -135,14 +135,11 @@ img {
 
 .hero {
     background-color: var(--logo-color-second);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    max-width: 2560px;
     text-align: center;
 }
 
@@ -154,6 +151,9 @@ img {
     letter-spacing: 0.02em;
     color: var(--color-white-text);
 
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .modal-btn {
@@ -166,12 +166,10 @@ img {
     background: var(--logo-color-first);
     color: var(--color-white-text);
 
-    /* display: block; */
-    /* margin: 0 auto; */
     padding: 16px 32px;
     margin-top: 48px;
-
-
+    border: none;
+    border-radius: 4px;
 }
 
 .modal-btn:hover,
@@ -181,18 +179,14 @@ img {
 
 /*--------------------------------About company--------------------------------*/
 
-.about-container {
-    display: flex;
+.section-about {
     padding: 120px 15px;
-    /* flex-basis: calc((100% - (3 * 24px)) / 4); */
-
 }
+
 
 .list-about {
     display: flex;
-    align-items: center;
     gap: var(--card-gap);
-
 }
 
 .list-about-item {
@@ -206,6 +200,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--logo-color-second);
 
+    margin-bottom: 8px;
 }
 
 .text-about-item {
@@ -214,7 +209,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-
 }
 
 .visually-hidden {
@@ -233,7 +227,9 @@ img {
 /*--------------------------------What are we doing--------------------------------*/
 
 .preview-container {
-    padding: 120px 15px;
+    padding-bottom: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .list-preview {
@@ -241,7 +237,6 @@ img {
     gap: var(--card-gap);
     flex-basis: calc((100% - 48px) / 3);
     margin-top: 72px;
-    /* margin-bottom: 120px; */
 }
 
 .section-title {
@@ -258,9 +253,6 @@ img {
 
 .team-section {
     background-color: var(--color-studiofooter-btnprof);
-}
-
-.team-container {
     padding: 120px 15px;
 }
 
@@ -271,8 +263,7 @@ img {
 .list-team {
     display: flex;
     gap: var(--card-gap);
-    /* padding-bottom: 120px; */
-
+    margin-top: 72px;
 }
 
 .list-team-items {
@@ -281,10 +272,6 @@ img {
     background: var(--color-white-text);
 }
 
-.section-title {
-    margin-bottom: 72px;
-    /* padding-top: 120px; */
-}
 
 .subtitle-team {
     font-weight: 500;
@@ -294,7 +281,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--logo-color-second);
 
-    margin: 32px 49px 8px;
+    margin: 0 0 8px;
 }
 
 .text-team {
@@ -304,18 +291,13 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-
 }
 
 /*--------------------------------Footer--------------------------------*/
 
 .footer {
     background-color: var(--logo-color-second);
-}
-
-.footer-container {
-    padding: 100px 1020px 100px 0;
-
+    padding: 100px 1020px 100px 156px;
 }
 
 .logo-footer {
@@ -335,15 +317,17 @@ img {
     letter-spacing: 0.02em;
     color: var(--text-footer);
 
-    width: 264px;
+    /* width: 264px; */
     margin-top: 16px;
 }
 
-
+.text-footer-div{
+    width: 264px;
+}
 
 /*--------------------------------portfolio page--------------------------------*/
 
-.portfolio-container {
+.portfolio-section {
     padding: 120px 15px;
 }
 
@@ -365,10 +349,8 @@ img {
 
 .menu-list-portfolio {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: var(--card-gap);
-    margin-top: 96px;
     margin-bottom: 72px;
 }
 
@@ -383,9 +365,6 @@ img {
     flex-basis: calc(100% / 3 - var(--card-gap));
     margin-left: var(--card-gap);
     margin-top: 48px;
-    /* border: 1px solid var(--text-footer); */
-
-
 }
 
 .menu-btn-portfolio:hover,
@@ -407,8 +386,6 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--logo-color-second);
-
-    /* margin-top: 32px; */
 }
 
 .text-list-portfolio {
